@@ -1,0 +1,7 @@
+notebook
+pandas
+pdfplumber
+textractor
+tabulate
+ghostscript
+numpy
