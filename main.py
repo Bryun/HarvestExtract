@@ -1,11 +1,13 @@
 from pandas import DataFrame
 from pdfplumber import open
 from os import listdir, path
-from os.path import splitext
+from os.path import splitext, split
 from re import match, findall, compile, search, sub
 from itertools import chain
 from json import dump, dumps, load, loads
 from numpy import array
+from textractor import Textractor
+from pdf2image import convert_from_path
 
 source: str = "./Documents"
 
@@ -95,6 +97,39 @@ def structure(lines: list):
 
     print(dumps(scale, indent=4))
 
+
+def test(name, page, extension=".png"):
+    name: str = f"{name}_{page}{extension}"
+    return name
+
+
+def extract_text(path: str):
+
+    # https://aws-samples.github.io/amazon-textract-textractor/index.html
+
+    page = 1
+    directory, file = split(path)
+    name, extension = splitext(file)
+
+    extractor: Textractor = Textractor(profile_name="guru-dev-profile")
+    images = convert_from_path(
+        path, fmt="png", output_folder="./Outputs/", paths_only=True, output_file=name
+    )
+
+    output: str = ''
+
+    for image in images:
+        document = extractor.start_document_text_detection(
+            file_source=image,
+            s3_upload_path='s3://ocr-harvest-extract-bucket/textractor/' 
+        )
+
+        output += document.text
+    
+    print(output)
+
+    # with open(f'./Textual/{name}.txt', 'a+') as writer:
+    #     writer.write(output)
 
 # data = lines(Bear_Harvest_by_method_and_county, 1, -1, 3)
 # rows = []
@@ -339,3 +374,6 @@ def structure(lines: list):
 #                 image = page.to_image()
 #                 image.save(f'./Images/{name}.png', format='PNG')
 #                 break
+
+
+extract_text(Bear_Harvest_by_method_and_county)
