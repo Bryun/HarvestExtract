@@ -1,7 +1,8 @@
 notebook
 pandas
 pdfplumber
-textractor
+amazon-textract-textractor
 tabulate
 ghostscript
 numpy
+pdf2image
