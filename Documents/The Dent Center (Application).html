@@ -1,0 +1,909 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            height: 20px;
+        }
+
+        .tag {
+            width: 10%;
+        }
+
+        .value {
+            width: 15%;
+        }
+
+        .suffix {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th colspan="2">CUSTOMER INFORMATION</th>
+            </tr>
+            <tr>
+                <td class="tag">Name:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>City State Zip:</td>
+                <td></td>
+            <tr>
+                <td>Email Address:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Work Phone:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Home Phone:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cell Phone:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Rental Car Needed?</td>
+                <td>
+                    <select>
+                        <option value="N/A">N/A</option>
+                        <option value="Y">Y</option>
+                        <option value="N">N</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Rental Car coverage on insurance policy?</td>
+                <td>
+                    <select>
+                        <option value="N/A">N/A</option>
+                        <option value="Y">Y</option>
+                        <option value="N">N</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th class="tag">DAMAGE TYPE</th>
+                <th class="value">Dent Center</th>
+                <th class="value">Other</th>
+            </tr>
+            <tr>
+                <td>Hood:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Front Cowl Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Roof:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Rear Cowl Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Deck Lid/Tail Gate:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Left Fender:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Left Front Door:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Left Rear Door:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Left Roof Rail/Sail Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Left Quarter Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Right Fender:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Right Front Door:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Right Rear Door:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Right Roor Rail/Sail Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Right Quarter Panel:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Remove/Install Headliner:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Remove/Install Sunroof:</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">TOTAL:</td>
+                <td>$</td>
+                <td>$</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="4">VEHICLE INFORMATION</th>
+            </tr>
+            <tr>
+                <td class="tag">Color:</td>
+                <td class="value"></td>
+                <td class="tag">Year:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>Make:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Model:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Licence Plate #:</td>
+                <td colspan="3">
+            </tr>
+            <tr>
+                <td>VIN:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="4">INSURANCE INFORMATION</th>
+            </tr>
+            <tr>
+                <td>Insurance Company:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Deductable Amount:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Claim #:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>Policy #:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="tag">Adjusters Phone #:</td>
+                <td class="value"></td>
+                <td class="tag">Ext.:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>Adjusters Fax:</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="4">--- insert image here ---</td>
+            </tr>
+            <tr>
+                <td>Authorization:</td>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="2">PRIOR DAMAGE</th>
+            </tr>
+            <tr>
+                <td rowspan="10" class="value">--- insert image here ---</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th class="value">REMARKS</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Renter (Print)</td>
+                <td></td>
+                <td>Phone:</td>
+                <td></td>
+                <td>Email:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="tag">Home Address:</td>
+                <td class="value"></td>
+                <td class="tag">City:</td>
+                <td class="value"></td>
+                <td class="tag">State</td>
+                <td class="value"></td>
+                <td class="tag">Zip:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>Driver's Licence #:</td>
+                <td></td>
+                <td>State:</td>
+                <td></td>
+                <td>Exp. Date:</td>
+                <td></td>
+                <td>Date of Birth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Insurance Company:</td>
+                <td></td>
+                <td>Policy No:</td>
+                <td></td>
+                <td>Agent:</td>
+                <td></td>
+                <td>Phone</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Employer:</td>
+                <td></td>
+                <td>Title:</td>
+                <td></td>
+                <td>How Long ?</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Employer's Address:</td>
+                <td></td>
+                <td>Phone:</td>
+                <td></td>
+                <td>Supervisor:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Emergency Contact:</td>
+                <td></td>
+                <td>Address:</td>
+                <td></td>
+                <td>Phone:</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th colspan="10">ABSOLUTELY NO DRIVERS UNDER 21 YEARS OF AGE</th>
+            </tr>
+            <tr>
+                <td class="tag">Additional Driver:</td>
+                <td class="value"></td>
+                <td class="tag">Dr. Lic. #:</td>
+                <td class="value"></td>
+                <td class="tag">State:</td>
+                <td class="value"></td>
+                <td class="tag">Exp. Date:</td>
+                <td class="value"></td>
+                <td class="tag">Date of Birth:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>Insurance Company:</td>
+                <td></td>
+                <td>Policy Number:</td>
+                <td></td>
+                <td>Agent:</td>
+                <td></td>
+                <td>Phone:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Additional Driver:</td>
+                <td></td>
+                <td>Dr. Lic. #:</td>
+                <td></td>
+                <td>State:</td>
+                <td></td>
+                <td>Exp. Date:</td>
+                <td></td>
+                <td>Date of Birth:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Insurance Company:</td>
+                <td></td>
+                <td>Policy Number:</td>
+                <td></td>
+                <td>Agent:</td>
+                <td></td>
+                <td>Phone:</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr rowspan="">
+                <td>
+                    NOTICE: Your rental agreement offers, for an additional charge, an optional waiver to cover all or a
+                    part of your responsibility for damage to or loss of the vehicle.
+                    Before deciding whether to purchase the wiaver, you may wish to determine whether tyour own
+                    automibile insurance or credit card agreements provides coverage for the rental vehicle damage or
+                    loss and determine the amount of the deductible unnder your own insurance coverage.
+                    The purchase of the waiver id not mandatory. The waiver is not insurance.
+                </td>
+                <td colspan="2">
+                    <strong><u>Collision Damage Waiver (CDW)</u></strong>
+                    <br />
+                    <br />
+                    ___ By initialing here you agree to purchase our CDW. CDW does not cover all instances of damages to
+                    the vehicle.
+                    There are exclusions, subject to the terms of Paragraph 5 & 6 on the reverse your responsibility for
+                    Collision Damage to the Vehicle is limited to $ ___.
+                    <br />
+                    <br />
+                    ___ By initialing here your decline to the purchase our CDW, and you agree to be responsible for all
+                    the damage to or loss or theft of the vehicle.
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <strong>Exclusions may apply to the following optional insurance products. Read the brochure(s)
+                        carefully.</strong>
+                    <br />
+                    <br />
+                    <strong><u>Personal Accident Insurance (PAI)/Personal Effects Coverage (PEC)</u></strong>
+                    <br />
+                    <br />
+                    ___ By initialing here you agree to purchases PAI and PEC, a summary of the terms of which appears
+                    in a separate brochure that you acknowledge receiving.
+                    <br />
+                    <br />
+                    <strong><u>Supplemental Liability Insurance (SLI)</u></strong>
+                    <br />
+                    <br />
+                    ___ By initialing here, you agree to purchase SLI and you acknowledge receiving a separate brochure
+                    that summarizes the terms of the SLI policy.
+                    SLI does not cover all risks.
+                    <br />
+                    <strong>There may be exclusions for unauthorized or intoxicated drivers, no first party uninsured
+                        motorist coverage, no coverage for certain passengers in the vehicle, and other
+                        exclusions.</strong>
+                    Please read the SLI brochure carefully.
+                    <br />
+                    <br />
+                    ___ By initialing here you <strong>decline to purchase SLI.</strong> You agree to be responsible
+                    for, and you agree that your personal auto insurance coverage is primary for any damage or injury
+                    you cause to others and their property.
+
+                </td>
+            </tr>
+            <tr>
+                <td>Check Method of Payment
+                    <br /><br />
+                    <select>
+                        <option value="N/A">N/A</option>
+                        <option value="AE">AE</option>
+                        <option value="MC">MC</option>
+                        <option value="VISA">VISA</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Direct Bill">Direct Bill</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td rowspan="3" colspan="2">
+                    By signing below, you agree to: the terms and conditions of this Rental Agreement,
+                    the Rental Agreement Terms & Conditions on the back side,
+                    vehicle inspection report and any signed addenda (the “Agreement”),
+                    and acknowledge that you had an opportunity to read the Agreement before signing;
+                    and authorize us to: process a separate payment card voucher in your name for all Charges,
+                    including Tolls and Violations; release your billing/rental information to third parties for
+                    billing/processing and other legitimate purpose;
+                    and adjust Charges with your payment card issuer after our final audit.
+                    <br/>
+                    <br/>
+                    Renter:<span style="font-weight: bold; font-size: large;"> X</span>
+                    <br/>
+                    <br/>
+                    Additional Driver:<span style="font-weight: bold; font-size: large;"> X</span>
+                    <br/>
+                    <br/>
+                    </tr>
+                </td>
+            </tr>
+            <tr>
+                <td>The Vehicle may be driven or used only in the State of Texas or ___ mile radius of the renting
+                    location, or ___</td>
+            </tr>
+            <tr>
+                <td>In event of accident contact 911, please contact our office immediately.</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>Year/Make:</td>
+                <td></td>
+                <td>Vehicle #</td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="value">Model:</td>
+                <td class="value"></td>
+                <td class="tag">Tag:</td>
+                <td class="value"></td>
+                <td class="tag">Licence Plate #:</td>
+                <td class="value"></td>
+            </tr>
+            <tr>
+                <td>VIN #:</td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <th colspan="2">Odometer:</th>
+                <td>Fuel Out:</td>
+                <td>
+                    <select>
+                        <option value="N/A">N/A</option>
+                        <option value="E">E</option>
+                        <option value="1/4">1/4</option>
+                        <option value="1/2">1/2</option>
+                        <option value="3/4">3/4</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Out:</td>
+                <td></td>
+                <td>Fuel In:</td>
+                <td>
+                    <select>
+                        <option value="N/A">N/A</option>
+                        <option value="E">E</option>
+                        <option value="1/4">1/4</option>
+                        <option value="1/2">1/2</option>
+                        <option value="3/4">3/4</option>
+                        <option value="F">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>In:</td>
+                <td></td>
+                <td>Date/Time Due In:</td>
+                <td><span class="suffix">AM/PM</span></td>
+            </tr>
+            <tr>
+                <td>Miles Driven:</td>
+                <td></td>
+                <td>Date/Time Due Ext.:</td>
+                <td><span class="suffix">AM/PM</span></td>
+            </tr>
+            <tr>
+                <td>Miles Allowed:</td>
+                <td></td>
+                <td>Date/Time Due Out:</td>
+                <td><span class="suffix">AM/PM</span></td>
+            </tr>
+            <tr>
+                <td>Excess Miles:</td>
+                <td></td>
+                <td>Date/Time In:</td>
+                <td><span class="suffix">AM/PM</span></td>
+            </tr>
+            <tr>
+                <td>Prepaid Rent:</td>
+                <td></td>
+                <td>Deposit:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Rates</th>
+                <th>Charges</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Miles @ ¢ per mile</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hours @ $</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Days @ $</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Weeks @ $</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total time mileage</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CDW ___ @ $ ___ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>___ @ $ ___ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vehicle Licence Recovery Fee</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Tax Amount</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vehicle Licence Recovery Fee</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gas Charge</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sub Total</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Tax Amount</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Vehicle Licence Recovery Fee</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gas Charge</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CDW @ $ _____ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>SLI @ $ _____ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PAI/PEC @ $ _____ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>_____ @ $ _____ per day</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total Amount Due</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Customer Pay</td>
+                <td></td>
+                <td>Direct Bill 1</td>
+                <td></td>
+                <td>Direct Bill 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Minus Deposit</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Net Due Rental Location</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Net Due Customer</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">ALL CHARGES SUBJECT TO FINAL AUDIT</th>
+            </tr>
+            <tr>
+                <td colspan="2">Refund received by:
+                    <br/>
+                    <br/>
+                    <span style="font-weight: bold; font-size: large;"> X</span>
+                    <br/>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Remarks:</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+
+
+    </div>
+</body>
+
+</html>
+<!-- 
+[
+Representative: : ,
+Estimate Date: : ,
+ : ,
+
+
+
+
+
+
+Year: : , 
+Make : , 
+Model: : , 
+License Plate e: : , 
+VIN: : , 
+
+REMARKS : , 
+
+Insurance Company : , 
+Deductible Amount : , 
+Claim #: : , 
+Policy #: : , 
+
+Adjusters Phone #: :        Ext., 
+Adjusters Fax # : , 
+
+PRIOR DAMAGE : D I a 0, 
+
+Authorization: : ]
+[
+    Vehicle # : , 
+    Year/Make : , 
+    EMAIL: : , 
+    Renter (Print) : , 
+    License Plate # : , 
+    Tag : , 
+    Zip : , 
+    City : , 
+    VIN # : , 
+    Date of Birth : , 
+    Exp. Date : , 
+    State : , 
+    Driver's License # : , 
+    1/2 3/4 F : , 
+    Fuel Out : E 1/4, 
+    Agent : , 
+    Insurance Company : , 
+    Fuel In : 1/4 1/2 3/4 F, 
+    Title : , 
+    How Long? : , 
+    Employer : , 
+    E : AM, 
+    In : , 
+    Date/Time Due In : PM, 
+    Phone : , 
+    Supervisor : , 
+    Employer's Address : , 
+    Date/Time Due Ext. : AM PM, Phone : , 
+    Address : , 
+    Emergency Contact : , 
+    Miles Allowed : , 
+    Date/Time Due Out : AM PM, 
+    Excess Miles : , 
+    Date/Time In : AM PM, 
+    State : , 
+    Exp. Date : , 
+    Dr. Lic. # : , 
+    Additional Driver : , 
+    Deposit : , 
+    Phone : , 
+    Prepaid Rent : , 
+    Agent : , 
+    Policy Number : , 
+    Insurance Company : , 
+    Date of Birth : , 
+    State : , 
+    Dr. Lic. # : , 
+    Exp. Date : , 
+    Additional Driver : , 
+    Phone : , 
+    Agent : , 
+    Policy Number : , 
+    Insurance Company : , 
+    Hours : @ $, 
+    Days : @ $, 
+    Weeks : $, 
+    does By are reverse, not initialing exclusions. cover your here all Subject instances responsibility you agree to of the to damage for terms purchase Collision of to Paragraph the our Damage Vehicle. CDW. 5 CDW to There & 6 the on Vehicle the : $, 
+    per day : CDW @ $, By agree initialing Vehicle. to be here responsible you decline for all to damage purchase to our or CDW, loss or and theft of : , 
+    summary By initialing you of acknowledge the here terms ,you of agree which receiving. to appears purchase in PAI a separate and PEC, brochure a : , 
+    By initialing here, you decline to purchase PAI and PEC. : , 
+    acknowledge By initialing terms drivers, coverage may of exclusions. here, receiving the no be SLI you first exclusions for policy. agree a certain party separate Please to SLI uninsured purchase for passengers read does brochure unauthorized the not SLI SLI motorist cover that in and brochure the summarizes all you or risks. Vehicle, coverage, intoxicated carefully. and no other : ,
+     Direct Bill 1 : , 
+     Direct Bill 2 : , 
+     Customer Pay : , 
+     By insurance initialing responsible to coverage here, others for, you and and is decline primary their you agree property. to for purchase that any damage your SLI. personal or You injury auto agree you : , 
+     VISA : , 
+     MC : , 
+     AE : , 
+     Other : , 
+     Cash : , 
+     Refund received by: : X, 
+     The of Vehicle Texas may or be driven mile or used radius only of the in the renting State : ,
+     Renter : X, 
+     Remarks: : , 
+     Additional Driver : ] -->

@@ -6,3 +6,4 @@ tabulate
 ghostscript
 numpy
 pdf2image
+Pillow
